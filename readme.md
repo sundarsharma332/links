@@ -41,4 +41,4 @@ Access additional features like FAQs, legal information, and more from the sideb
 
 ## Live Demo
 
-Check out the live demo of QuickLinks here: [QuickLinks Live Demo](https://sundarsharma332.github.io/quicklinks/)
+Check out the live demo of QuickLinks here: [QuickLinks Live Demo](https://sundarsharma332.github.io/links/)
