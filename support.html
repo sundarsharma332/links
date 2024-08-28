@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - QuickLinks</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition duration-500">
+    <!-- Navbar -->
+    <div class="bg-white dark:bg-gray-800 shadow-md p-4 flex justify-between items-center">
+        <a href="index.html" class="text-lg font-bold text-purple-500 hover:underline">QuickLinks</a>
+        <button id="notifyButton"
+            class="bg-gradient-to-r from-purple-500 to-pink-500 text-white py-2 px-4 rounded-lg hover:from-pink-500 hover:to-purple-500 flex items-center">
+            <i class="fas fa-bell mr-2"></i> Notify Release Updates
+        </button>
+    </div>
+
+    <div class="container mx-auto p-6 max-w-7xl">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h1 class="text-3xl font-bold mb-6">Support</h1>
+            <p class="mb-6">Need help? Our support team is here to assist you with any issues or questions you may have.
+                You can reach out to us through the following channels:</p>
+            <ul class="list-disc pl-5 space-y-2">
+                <li><strong>Email:</strong> support@quicklinks.com</li>
+                <li><strong>Phone:</strong> +1 234 567 890</li>
+                <li><strong>Live Chat:</strong> Available 24/7 on our website</li>
+            </ul>
+            <p class="mt-4">We're committed to providing you with the best possible support experience.</p>
+            <div class="flex justify-end mt-6">
+                <button onclick="window.location.href='index.html'"
+                    class="py-2 px-4 bg-purple-500 text-white rounded-md hover:bg-purple-600">Back to Home</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar"
+        class="fixed inset-y-0 right-0 bg-gray-800 bg-opacity-75 dark:bg-gray-700 dark:bg-opacity-75 transform translate-x-full transition-transform duration-300 z-50">
+        <div class="bg-white dark:bg-gray-900 p-6 w-80 h-full shadow-lg">
+            <button id="closeSidebar"
+                class="text-gray-800 dark:text-gray-100 hover:text-gray-600 dark:hover:text-gray-400 mb-4">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 class="text-2xl font-bold mb-6">App Details</h2>
+            <ul class="space-y-4">
+                <li><a href="faq.html" class="hover:underline">FAQ'S</a></li>
+                <li><a href="legal.html" class="hover:underline">Legal</a></li>
+                <li><a href="terms.html" class="hover:underline">Terms of Use</a></li>
+                <li><a href="privacy.html" class="hover:underline">Data Collection and Privacy Policy</a></li>
+                <li><a href="https://github.com" target="_blank" class="hover:underline">GitHub</a></li>
+                <li><a href="support.html" class="hover:underline">Support</a></li>
+                <li><a href="demo.html" class="hover:underline">Request a Demo</a></li>
+            </ul>
+            <div class="mt-6">
+                <label for="themeToggle" class="block text-gray-800 dark:text-gray-100 font-medium mb-2">Toggle
+                    Light/Dark Mode</label>
+                <input type="checkbox" id="themeToggle" class="toggle-checkbox">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('notifyButton').addEventListener('click', () => {
+            window.location.href = 'releaseupdate.html';
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ'S - QuickLinks</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition duration-500">
+    <!-- Navbar -->
+    <div class="bg-white dark:bg-gray-800 shadow-md p-4 flex justify-between items-center">
+        <div class="text-lg font-bold text-purple-500">QuickLinks</div>
+        <button id="notifyButton"
+            class="bg-gradient-to-r from-purple-500 to-pink-500 text-white py-2 px-4 rounded-lg hover:from-pink-500 hover:to-purple-500 flex items-center">
+            <i class="fas fa-bell mr-2"></i> Notify Release Updates
+        </button>
+    </div>
+
+    <div class="container mx-auto p-6 max-w-7xl">
+        <h1 class="text-3xl font-bold mb-6">FAQ'S</h1>
+        <p class="mb-6">Find answers to your questions about QuickLinks, including how to use the app, its features, and
+            how it can enhance your bookmarking experience.</p>
+
+        <!-- Accordion -->
+        <div class="space-y-4">
+            <div class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow">
+                <button type="button"
+                    class="w-full text-left px-4 py-3 text-gray-900 dark:text-gray-100 font-semibold focus:outline-none"
+                    onclick="toggleAccordion('faq1')">
+                    What is QuickLinks and how does it work?
+                </button>
+                <div id="faq1" class="px-4 py-3 hidden">
+                    <p class="text-gray-700 dark:text-gray-300">QuickLinks is a bookmark management tool designed to
+                        help you organize and manage your favorite web links efficiently. The application allows you to
+                        create categories, add bookmarks with custom icons, edit existing links, and delete unnecessary
+                        ones. All your bookmarks are stored in your browser's local storage, ensuring they persist
+                        across sessions.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow">
+                <button type="button"
+                    class="w-full text-left px-4 py-3 text-gray-900 dark:text-gray-100 font-semibold focus:outline-none"
+                    onclick="toggleAccordion('faq2')">
+                    How do I add, edit, and organize my bookmarks?
+                </button>
+                <div id="faq2" class="px-4 py-3 hidden">
+                    <p class="text-gray-700 dark:text-gray-300">To add a new bookmark, click the "+" button on the home
+                        page. A modal will appear where you can enter the link's name, URL, and select a category. You
+                        can also upload an icon to personalize your bookmark. To edit a bookmark, click the edit icon on
+                        the bookmark card, make your changes, and save. To organize bookmarks, simply assign them to
+                        different categories during the creation or editing process.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow">
+                <button type="button"
+                    class="w-full text-left px-4 py-3 text-gray-900 dark:text-gray-100 font-semibold focus:outline-none"
+                    onclick="toggleAccordion('faq3')">
+                    What are the benefits of categorizing my bookmarks?
+                </button>
+                <div id="faq3" class="px-4 py-3 hidden">
+                    <p class="text-gray-700 dark:text-gray-300">Categorizing your bookmarks allows you to easily find
+                        and manage links based on their relevance. For instance, you can have separate categories for
+                        Work, Personal, Entertainment, etc. This organization helps in keeping your bookmarks
+                        clutter-free and makes it easier to locate specific links when needed.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow">
+                <button type="button"
+                    class="w-full text-left px-4 py-3 text-gray-900 dark:text-gray-100 font-semibold focus:outline-none"
+                    onclick="toggleAccordion('faq4')">
+                    How does the light/dark mode feature work?
+                </button>
+                <div id="faq4" class="px-4 py-3 hidden">
+                    <p class="text-gray-700 dark:text-gray-300">QuickLinks includes a light/dark mode toggle, allowing
+                        you to switch between themes based on your preference or environment. You can find this toggle
+                        in the app's sidebar. The chosen mode will be applied across all pages of the application,
+                        providing a comfortable viewing experience whether you're working during the day or at night.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow">
+                <button type="button"
+                    class="w-full text-left px-4 py-3 text-gray-900 dark:text-gray-100 font-semibold focus:outline-none"
+                    onclick="toggleAccordion('faq5')">
+                    Can I access my bookmarks on another device?
+                </button>
+                <div id="faq5" class="px-4 py-3 hidden">
+                    <p class="text-gray-700 dark:text-gray-300">QuickLinks currently saves bookmarks in the browser's
+                        local storage, which means your bookmarks are only available on the device where you created
+                        them. To access your bookmarks on another device, you would need to manually transfer the data
+                        or use browser synchronization features.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow">
+                <button type="button"
+                    class="w-full text-left px-4 py-3 text-gray-900 dark:text-gray-100 font-semibold focus:outline-none"
+                    onclick="toggleAccordion('faq6')">
+                    How secure is my data in QuickLinks?
+                </button>
+                <div id="faq6" class="px-4 py-3 hidden">
+                    <p class="text-gray-700 dark:text-gray-300">Your bookmarks in QuickLinks are stored locally on your
+                        device, which means they are not uploaded to any server, ensuring your data remains private and
+                        secure. However, this also means if you clear your browser data, you will lose your bookmarks
+                        unless you have backed them up.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 dark:bg-gray-700 rounded-lg shadow">
+                <button type="button"
+                    class="w-full text-left px-4 py-3 text-gray-900 dark:text-gray-100 font-semibold focus:outline-none"
+                    onclick="toggleAccordion('faq7')">
+                    What should I do if I encounter an issue or bug?
+                </button>
+                <div id="faq7" class="px-4 py-3 hidden">
+                    <p class="text-gray-700 dark:text-gray-300">If you encounter any issues or bugs while using
+                        QuickLinks, please contact our support team via the Support section in the sidebar. Providing
+                        detailed information about the issue will help us resolve it quickly. You can also check for
+                        updates or new releases that may address the issue.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Home Button -->
+        <div class="mt-6">
+            <button onclick="window.location.href='index.html'"
+                class="py-2 px-4 bg-purple-500 text-white rounded-md hover:bg-purple-600">Back to Home</button>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar"
+        class="fixed inset-y-0 right-0 bg-gray-800 bg-opacity-75 dark:bg-gray-700 dark:bg-opacity-75 transform translate-x-full transition-transform duration-300 z-50">
+        <div class="bg-white dark:bg-gray-900 p-6 w-80 h-full shadow-lg">
+            <button id="closeSidebar"
+                class="text-gray-800 dark:text-gray-100 hover:text-gray-600 dark:hover:text-gray-400 mb-4">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 class="text-2xl font-bold mb-6">App Details</h2>
+            <ul class="space-y-4">
+                <li><a href="faq.html" class="hover:underline">FAQ'S</a></li>
+                <li><a href="legal.html" class="hover:underline">Legal</a></li>
+                <li><a href="terms.html" class="hover:underline">Terms of Use</a></li>
+                <li><a href="privacy.html" class="hover:underline">Data Collection and Privacy Policy</a></li>
+                <li><a href="https://github.com" target="_blank" class="hover:underline">GitHub</a></li>
+                <li><a href="support.html" class="hover:underline">Support</a></li>
+                <li><a href="demo.html" class="hover:underline">Request a Demo</a></li>
+            </ul>
+            <div class="mt-6">
+                <label for="themeToggle" class="block text-gray-800 dark:text-gray-100 font-medium mb-2">Toggle
+                    Light/Dark Mode</label>
+                <input type="checkbox" id="themeToggle" class="toggle-checkbox">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAccordion(id) {
+            const element = document.getElementById(id);
+            element.classList.toggle('hidden');
+        }
+
+        document.getElementById('notifyButton').addEventListener('click', () => {
+            window.location.href = 'releaseupdate.html';
+        });
+
+        document.getElementById('notifyUpdates').addEventListener('click', () => {
+            window.location.href = 'releaseupdate.html';
+        });
+    </script>
+</body>
+
+</html>

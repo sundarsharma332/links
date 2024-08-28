@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Demo - QuickLinks</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition duration-500">
+    <!-- Navbar -->
+    <div class="bg-white dark:bg-gray-800 shadow-md p-4 flex justify-between items-center">
+        <a href="index.html" class="text-lg font-bold text-purple-500 hover:underline">QuickLinks</a>
+        <button id="notifyButton"
+            class="bg-gradient-to-r from-purple-500 to-pink-500 text-white py-2 px-4 rounded-lg hover:from-pink-500 hover:to-purple-500 flex items-center">
+            <i class="fas fa-bell mr-2"></i> Notify Release Updates
+        </button>
+    </div>
+
+    <div class="container mx-auto p-6 max-w-7xl">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h1 class="text-3xl font-bold mb-6">Request a Demo</h1>
+            <p class="mb-6">Interested in learning more about QuickLinks and how it can benefit you? Request a
+                personalized demo by filling out the form below.</p>
+
+            <form class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Your
+                        Name</label>
+                    <input type="text" id="name" placeholder="John Doe"
+                        class="mt-1 block w-full p-2 border border-gray-300 rounded-md dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100"
+                        required>
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Your
+                        Email</label>
+                    <input type="email" id="email" placeholder="you@example.com"
+                        class="mt-1 block w-full p-2 border border-gray-300 rounded-md dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100"
+                        required>
+                </div>
+                <div>
+                    <label for="company" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Company
+                        Name</label>
+                    <input type="text" id="company" placeholder="Company Inc."
+                        class="mt-1 block w-full p-2 border border-gray-300 rounded-md dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100"
+                        required>
+                </div>
+                <div>
+                    <label for="message"
+                        class="block text-sm font-medium text-gray-700 dark:text-gray-300">Message</label>
+                    <textarea id="message" rows="4" placeholder="Tell us what you're looking for..."
+                        class="mt-1 block w-full p-2 border border-gray-300 rounded-md dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100"></textarea>
+                </div>
+                <div class="flex justify-end">
+                    <button type="submit"
+                        class="py-2 px-4 bg-purple-500 text-white rounded-md hover:bg-purple-600">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar"
+        class="fixed inset-y-0 right-0 bg-gray-800 bg-opacity-75 dark:bg-gray-700 dark:bg-opacity-75 transform translate-x-full transition-transform duration-300 z-50">
+        <div class="bg-white dark:bg-gray-900 p-6 w-80 h-full shadow-lg">
+            <button id="closeSidebar"
+                class="text-gray-800 dark:text-gray-100 hover:text-gray-600 dark:hover:text-gray-400 mb-4">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 class="text-2xl font-bold mb-6">App Details</h2>
+            <ul class="space-y-4">
+                <li><a href="faq.html" class="hover:underline">FAQ'S</a></li>
+                <li><a href="legal.html" class="hover:underline">Legal</a></li>
+                <li><a href="terms.html" class="hover:underline">Terms of Use</a></li>
+                <li><a href="privacy.html" class="hover:underline">Data Collection and Privacy Policy</a></li>
+                <li><a href="https://github.com" target="_blank" class="hover:underline">GitHub</a></li>
+                <li><a href="support.html" class="hover:underline">Support</a></li>
+                <li><a href="demo.html" class="hover:underline">Request a Demo</a></li>
+            </ul>
+            <div class="mt-6">
+                <label for="themeToggle" class="block text-gray-800 dark:text-gray-100 font-medium mb-2">Toggle
+                    Light/Dark Mode</label>
+                <input type="checkbox" id="themeToggle" class="toggle-checkbox">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('notifyButton').addEventListener('click', () => {
+            window.location.href = 'releaseupdate.html';
+        });
+
+        document.getElementById('notifyUpdates').addEventListener('click', () => {
+            window.location.href = 'releaseupdate.html';
+        });
+    </script>
+
+</body>
+
+</html>
