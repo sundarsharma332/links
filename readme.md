@@ -39,6 +39,6 @@ Access additional features like FAQs, legal information, and more from the sideb
 
 ![App Details Sidebar](image-4.png)
 
-## Live Demo
+## Live Demo app
 
 Check out the live demo of QuickLinks here: [QuickLinks Live Demo](https://sundarsharma332.github.io/links/)
